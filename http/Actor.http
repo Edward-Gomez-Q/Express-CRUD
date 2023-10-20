@@ -1,0 +1,35 @@
+### Obtener todos los actores
+GET http://localhost:3000/api/actors
+
+### Obtener un actor por id
+GET http://localhost:3000/api/actors/213
+
+### Crear un actor
+### Nota: el id no es necesario enviarlo, ya que se genera automáticamente
+### Nota: el lastUpdate no es necesario enviarlo, ya que se genera automáticamente
+POST http://localhost:3000/api/actors
+Content-Type: application/json
+
+{
+  "id": 0, 
+  "firstName": "Taylor",
+  "lastName": "Swift",
+  "lastUpdate": ""
+}
+
+### Actualizar un actor
+### Nota: el id no es necesario enviarlo, ya que se genera automáticamente
+### Nota: el lastUpdate no es necesario enviarlo, ya que se genera automáticamente
+
+PUT http://localhost:3000/api/actors/214
+Content-Type: application/json
+
+{
+    "id": 1,
+    "firstName": "Juanita",
+    "lastName": "Perez",
+    "lastUpdate": ""
+}
+
+### Borrar un actor de la base de datos permanentemente
+DELETE http://localhost:3000/api/actors/214
